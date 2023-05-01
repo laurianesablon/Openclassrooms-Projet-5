@@ -40,7 +40,6 @@ const slides = [
   
   arrowRight.addEventListener("click", () => {
 	i = (i + 1) % slides.length;  
-	console.log(i)
 	dots.children[i].classList.add("dot_selected");
 	dots.children[(i - 1 + slides.length) % slides.length].classList.remove("dot_selected");
 	banner_image.src = "./assets/images/slideshow/" + slides[i].image;
